@@ -1,0 +1,33 @@
+section {
+    padding-top: 2rem;
+  }
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+  
+    font-family: "Great Vibes", fantasy;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+  }

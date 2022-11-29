@@ -1,0 +1,30 @@
+section {
+    padding-top: 2rem;
+  }
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 960px;
+    }
+}
+
+footer {
+    padding: 2rem 0;
+  
+    background-color: #301a1a;
+  }
+  
+.footer__content {
+    max-width: 25rem;
+    margin: 0 auto;
+
+    font-size: small;
+    text-align: center;
+}
