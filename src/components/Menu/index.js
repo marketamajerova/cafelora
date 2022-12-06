@@ -45,6 +45,7 @@ export const Menu = (props = {}) => {
         );
     }
 
+    console.log(drinks);
 
 
 //    element.querySelector('.drinks-list').append(Drink({
