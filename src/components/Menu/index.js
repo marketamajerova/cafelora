@@ -1,5 +1,6 @@
-import { Layer } from './components/Layer/index.js';
 import './style.css';
+import { Layer } from './components/Layer/index.js';
+import { Drink } from './components/Drink/index.js';
 
 export const Menu = () => {
 
@@ -15,22 +16,7 @@ export const Menu = () => {
             Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
             </p>
             <div class="drinks-list">
-            <div class="drink">
-                <div class="drink__product">
-                <div class="drink__cup">
-                    <img src="https://apps.kodim.cz/daweb/cafelora/assets/cups/espresso.png">
-                </div>
-                <div class="drink__info">
-                    <h3>Espresso</h3>
-                    
-                </div>
-                </div>
-                <div class="drink__controls">
-                <button class="order-btn">
-                    Objednat
-                </button>
-                </div>
-            </div>
+            
 
             <div class="drink">
                 <div class="drink__product">
@@ -52,24 +38,25 @@ export const Menu = () => {
                 </div>
             </div>
 
-        
             <div class="order-detail">
             <a href="/objednavka">Detail objednávky</a>
             </div>
         </div>
    `
 
-   element.querySelector('.drink__info').append(Layer({
-        color: '#feeeca',
-        label: 'mléčná pěna',
-    }),
-    Layer({
-        color: '#b0dee1"',
-        label: 'voda',
-    }),
-    Layer({
-        color: '#613916',
-        label: 'espresso',
+   element.querySelector('.drinks-list').append(Drink({
+        id: 'romano',
+        name: 'Romano',
+        ordered: false,
+        image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png',
+        layers: [{
+            color: '#feeeca',
+            label: 'mléčná pěna',
+          },
+          {
+            color: '#b0dee1"',
+            label: 'voda',
+        }]
     }))
 
    return element;

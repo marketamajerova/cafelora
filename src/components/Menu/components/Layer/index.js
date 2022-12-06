@@ -8,7 +8,7 @@ export const Layer = (props) => {
 
     element.innerHTML = `<div class="layer__color" style="background-color: ${color}"></div>
                         <div class="layer__label">${label}</div>`;
-    console.log(element);             
+                
     return element;
 }
 
